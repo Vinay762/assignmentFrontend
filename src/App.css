@@ -1,38 +1,197 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+}
+
+.App .left{
+  width: 30vw;
+  height: 100vh;
+  /* border: 1px solid red; */
+}
+
+.App .left .upleft{
+  display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-weight: bold;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+.App .left .upleft .icon{
+  margin-right: 10px;
+}
+
+.App .left .bottomleft{
+  display: flex;
+  margin-top: 50%;
+  flex-direction: column;
+  margin-left: 30%;
+}
+
+.App .left .bottomleft .each{
+  display:  flex;
+  flex-direction: row;
+  align-items: center;
+  font-weight: bold;
+  margin : 10px;
+  cursor: pointer;
+}
+
+.App .left .bottomleft .second{
+  
+  height: 100%;
+  width: 70%;
+  padding-top: 10px;
+  padding-left: 5px;
+  padding-bottom: 10px;
+  padding-right: 15px;
+  color: blue;
+  background-color: aquamarine;
+  border-radius: 10px;
+}
+
+.App .left .bottomleft .each .icon{
+  margin-right: 10px;
+}
+
+
+.App .mid{
+  width : 40vw;
+  height: 100vh;
+  /* border: 1px solid blue; */
+}
+
+.App .mid .question-list{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 90px;
+}
+
+.App .mid .question-list .bold{
+  font-weight: bold;
+  font-size: x-large;
+}
+
+.App .mid .question-list .box{
+  margin-left: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: small;
   color: white;
+  background-color: gray;
+  border-radius: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.App .mid .text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 15px;
+  font-size: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App .mid .each{
+  display:  flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: blue;
+  cursor: pointer;
+}
+
+.App .mid .post{
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  margin-top: 20px;
+}
+
+
+
+.App .mid .post .card{
+  width: 100%;
+  border: 2px solid rgb(0,0,0,0.1);
+  border-radius: 10px;
+  padding: 20px;
+  
+}
+
+.App .mid .post .card .above{
+  margin-left: 5px;
+  margin-right: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-weight: 100px;
+}
+
+.App .mid .post .card .bottom{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  padding-top: 20px;
+}
+
+.App .mid .post .card .bottom .number{
+  display: flex;
+  justify-content: center;
+  height: 30px;
+  width: 30px;
+  background-color: blue;
+  align-items: center;
+  color: white;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+
+.App .right{
+  width: 30vw;
+  height: auto;
+  /* border: 1px solid red; */
+  margin-top: 20%;
+  margin-left: 3%;
+}
+
+.App .right .part1 .each{
+  display: flex;
+  flex-direction: row;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.App .right .part1 .each .text{
+  margin-right: 10px;
+}
+
+.App .right .part1 ui{
+  list-style-type: none;
+}
+
+.option-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.option-list li {
+  margin: 5px 0;
+}
+
+.rcard {
+  width: 70%;
+  padding: 0 10px 10px 10px;
+  background-color: #ffc0cb; /* Light pink background color */
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
 }
